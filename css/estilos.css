@@ -256,3 +256,123 @@ h2 {
 .elemento:hover .elemento_eliminar--btn { display: block; }
 .elemento:hover .elemento_valor { transform: translateX(-20px); }
 .elemento:hover .elemento_porcentaje { transform: translateX(-20px); }
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 960px) {
+    .presupuesto {
+        width: 90%;
+    }
+
+    .presupuesto_valor {
+        font-size: 36px;
+    }
+
+    .contenedor {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .ingreso {
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    .egreso {
+        width: 45%;
+    }
+
+    .agregar_descripcion {
+        width: 250px;
+    }
+}
+
+/* Móvil grande */
+@media (max-width: 640px) {
+    .cabecero {
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .presupuesto {
+        position: static;
+        transform: none;
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .presupuesto_valor {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .presupuesto_titulo {
+        font-size: 16px;
+    }
+
+    .agregar_contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .agregar_tipo {
+        width: 60px;
+        flex-shrink: 0;
+    }
+
+    .agregar_descripcion {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .agregar_valor {
+        flex: 1;
+        min-width: 80px;
+        margin-right: 0;
+    }
+
+    .agregar_btn {
+        margin-left: 0;
+    }
+
+    .contenedor {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .ingreso,
+    .egreso {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .elemento_eliminar--btn {
+        display: block;
+    }
+
+    .elemento:hover .elemento_valor { transform: none; }
+    .elemento:hover .elemento_porcentaje { transform: none; }
+}
+
+/* Móvil pequeño */
+@media (max-width: 380px) {
+    .presupuesto_valor {
+        font-size: 22px;
+    }
+
+    .presupuesto_ingreso--valor,
+    .presupuesto_egreso--valor {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+}
